@@ -1,0 +1,2 @@
+[console_scripts]
+clip-for-me = clip_for_me.cli:main
