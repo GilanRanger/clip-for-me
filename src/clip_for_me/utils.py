@@ -10,7 +10,7 @@ from yt_dlp import YoutubeDL
 def convert_highlights(markdownFile, output_file=None):
     # Convert markdown highlight timestamps to JSON for easier parsing later
     if output_file is None:
-        date = datetime.now().strftime("%-m-%-d-%Y")
+        date = datetime.now().strftime("%m/%d/%Y")
         output_file = f"highlights_{date}.json"
     jsonify_markdown(markdownFile, output_file, 2)
     print(f"{output_file} created in current directory.")
